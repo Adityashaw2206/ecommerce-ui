@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
-import Title from '../../components/Title'
-import CartTotal from '../../components/CartTotal'
-import { ShopContext } from '../../context/ShopContext'
+import Title from '../../components/Title.jsx'
+import CartTotal from '../../components/CartTotal.jsx'
+import { ShopContext } from '../../Context/ShopContext.jsx'
 import { assets } from '../../assets/assets'
 const PlaceOrder = () => {
   // TODO: Replace the following mock data with actual data from your store or API
