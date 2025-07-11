@@ -26,8 +26,8 @@ const Product = () => {
 
   return (
     <div className=" flex flex-col w-full mx-auto p-4 bg-white">
-      <div className="flex">
-      <div className="w-[50%] flex mx-5 ">
+      <div className="flex flex-col md:flex-row"> 
+      <div className="w-full md:w-[50%] flex justify-center mb-4 md:mb-0">
       <img
         src={productData.image}
         alt={productData.name}
