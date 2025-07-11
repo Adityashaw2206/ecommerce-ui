@@ -8,7 +8,7 @@ import About from "../pages/About/About.jsx";
 import Contact from "../pages/Contact/Contact.jsx";
 import Collections from "../pages/Collection/Collections.jsx";
 import { ShopContextProvider } from "../Context/ShopContextProvider.jsx";
-import { ShopContext } from "../context/ShopContext.jsx";
+import { ShopContext } from "../Context/ShopContext.jsx";
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
   const {setShowSearch, getCartCount} = useContext(ShopContext);

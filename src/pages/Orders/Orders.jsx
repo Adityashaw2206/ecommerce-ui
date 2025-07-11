@@ -1,20 +1,3 @@
-// import React, { useContext } from 'react'
-// import { ShopContext } from '../../context/ShopContext'
-// import Title from '../../components/Title'
-// const Orders = () => {
-//   // const {products, currency} = useContext(ShopContext)
-//   return (
-//     <div className='border-r pt-16'>
-//       <div className='text-2xl font-bold'>
-//         <Title text1={'My'} text2={'Order'} />
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default Orders
-
-
 import React from "react";
 
 const Orders = () => {

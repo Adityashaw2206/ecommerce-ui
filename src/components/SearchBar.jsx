@@ -1,11 +1,11 @@
 import {assets} from '../assets/assets';
-import React, { useContext, useState } from 'react';
-import { ShopContext } from '../context/ShopContext';
+import React, { useContext } from 'react';
+import { ShopContext } from '../Context/ShopContext';
 import { useLocation } from 'react-router-dom';
 
 
 const SearchBar = () => {
-  const { search, setSearch, showSearch, setShowSearch } = useContext(ShopContext);
+  const { search, setSearch } = useContext(ShopContext);
   const location = useLocation();
 
   const isAllowedPage =
