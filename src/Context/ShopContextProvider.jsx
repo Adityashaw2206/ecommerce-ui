@@ -1,7 +1,7 @@
 import { toast } from "react-toastify";
 import { products } from "../assets/assets";
 import { ShopContext } from "../context/ShopContext.jsx";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 export const ShopContextProvider = (props) => {
     const currency = '$';
