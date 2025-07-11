@@ -57,15 +57,15 @@ const PlaceOrder = () => {
           <Title text1={'Payment'} text2={'Method'} />
           {/* payment section method */}
           <div className='flex flex-wrap gap-3 lg:flex-row'>
-            <div onClick={() => setMethod('razorpay')}className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
+            <div onClick={() => setMethod('razorpay')}className='flex items-center gap-3 border p-2 px-3 cursor-pointer  sm-w:auto'>
               <p className={`min-w-3.5 h-3.5 border rounded-full ${method == 'razorpay' ? 'bg-green-500' : ' '}`}></p>
-              <img className='h-5 ms-4' src={assets.razorpay_logo} alt="" />
+              <img className='h-5 ms-4' src={assets.razorpay_logo} alt="" style={{ maxWidth: '80px', maxHeight: '24px', width: '100%' }}/>
             </div>
-            <div onClick={() => setMethod('stripe')}className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
+            <div onClick={() => setMethod('stripe')}className='flex items-center gap-3 border p-2 px-3 cursor-pointer sm:w-auto'>
               <p className={`min-w-3.5 h-3.5 border rounded-full ${method == 'stripe' ? 'bg-green-500' : ' '}`}></p>
-              <img className='h-5 ms-4' src={assets.stripe_logo} alt="" />
+              <img className='h-5 ms-4' src={assets.stripe_logo} alt="" style={{ maxWidth: '80px', maxHeight: '24px', width: '100%' }}/>
             </div>
-            <div onClick={() => setMethod('cod')}className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
+            <div onClick={() => setMethod('cod')}className='flex items-center gap-3 border p-2 px-3 cursor-pointer sm:w-auto' style={{ minWidth: 0 }}>
               <p className={`min-w-3.5 h-3.5 border rounded-full ${method == 'cod' ? 'bg-green-500' : ' '}`}></p>
               <p className='font-medium text-sm text-gray-500 mx-4'>Cash On Delivery</p>
             </div>
