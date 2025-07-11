@@ -1,6 +1,6 @@
 import { toast } from "react-toastify";
 import { products } from "../assets/assets";
-import { ShopContext } from "../context/ShopContext.jsx";
+import {ShopContext} from "./ShopContext";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 export const ShopContextProvider = (props) => {
